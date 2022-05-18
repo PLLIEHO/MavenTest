@@ -61,7 +61,6 @@ public class CommandCore {
                 break;
             case SHOW:
                 collection.getCollection().forEach(human -> {
-                    System.out.println(human.toString());
                     answer += human.toString();
                 });
                     
@@ -74,10 +73,6 @@ public class CommandCore {
                 OutputCore outputCore = new OutputCore();
                 outputCore.save(filename, collection);
                 Server.LOG.info("Сохранение успешно.");
-                channel.close();
-                Server.LOG.info("Канал закрыт.");
-                Server.LOG.info("Сервер отключён.");
-                System.exit(0);
                 break;
             case REMOVE_BY_ID:
                 RemoveById removeById = new RemoveById();
