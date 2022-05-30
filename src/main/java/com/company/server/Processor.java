@@ -1,6 +1,5 @@
 package com.company.server;
 
-import com.company.client.Sender;
 import com.company.common.Answer;
 import com.company.common.Request;
 import com.company.common.Serializer;

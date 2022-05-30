@@ -1,6 +1,5 @@
 package com.company.server.core.commands;
 
-import com.company.common.data.HumanBeing;
 import com.company.server.core.Collection;
 
 public class Filter {

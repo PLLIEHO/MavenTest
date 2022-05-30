@@ -2,10 +2,10 @@ package com.company.server.core;
 
 
 
-import com.company.common.data.HumanBeing;
-import com.company.common.data.Mood;
-import com.company.common.data.WeaponType;
-import com.company.common.exceptions.FileErrorException;
+import com.company.server.data.HumanBeing;
+import com.company.server.data.Mood;
+import com.company.server.data.WeaponType;
+import com.company.server.exceptions.FileErrorException;
 import com.company.server.Server;
 
 import java.io.BufferedReader;

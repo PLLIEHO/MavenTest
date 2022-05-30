@@ -3,10 +3,10 @@ package com.company.common;
 
 import java.io.*;
 
-public class Serializer{
+public class Serializer {
 
     public static final int SIZE = 32 * 1024;
-    public static final int PORT = 3131;
+    public static int PORT = 3131;
 
     public ByteArrayOutputStream serialize(Request request) throws IOException {
         ByteArrayOutputStream byteOutput = new ByteArrayOutputStream(SIZE);

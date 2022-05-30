@@ -1,4 +1,4 @@
-package com.company.common.data;
+package com.company.server.data;
 
 import java.util.Date;
 

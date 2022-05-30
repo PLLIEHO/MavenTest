@@ -1,8 +1,5 @@
 package com.company.common;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class ElementList {
     public static final String NAME = "name";
     public static final String COORDS = "coordinates";

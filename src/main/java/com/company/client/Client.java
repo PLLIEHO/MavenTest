@@ -1,5 +1,8 @@
 package com.company.client;
 
+
+import com.company.common.Serializer;
+
 import java.io.IOException;
 import java.net.*;
 
@@ -7,7 +10,7 @@ import java.net.*;
 
 public class Client {
     private final DatagramSocket socket = new DatagramSocket();
-    private final InetAddress address = InetAddress.getByName("localhost");
+    private InetAddress address;
 
     public Client() throws UnknownHostException, SocketException {
     }
@@ -22,6 +25,11 @@ public class Client {
         }
     }
     public void start() throws IOException {
+        System.out.println("Введите IP адрес сервера...");
+        address = InetAddress.getByName(InputCore.input());
+        System.out.println("Введите порт...");
+        Serializer.PORT = Integer.parseInt(InputCore.input());
+
         CommandChecker checker = new CommandChecker(address, socket);
         checker.check();
     }

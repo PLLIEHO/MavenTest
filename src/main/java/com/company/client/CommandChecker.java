@@ -3,11 +3,9 @@ package com.company.client;
 import com.company.common.*;
 
 import java.io.*;
-import java.lang.reflect.Field;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.regex.Pattern;
 
@@ -116,6 +114,7 @@ public class CommandChecker {
                     case "exit":
                         request = new Request(CommandList.EXIT, null);
                         sender.send(serializer.serialize(this.request).toByteArray(), address, socket);
+                        socket.close();
                         System.exit(0);
                         break;
                     case "remove_greater":

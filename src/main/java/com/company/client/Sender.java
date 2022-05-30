@@ -16,6 +16,8 @@ public class Sender {
         DatagramPacket toServer = new DatagramPacket(byteOutput, byteOutput.length, address, Serializer.PORT);
         DatagramPacket packetIn = new DatagramPacket(new byte[Serializer.SIZE], Serializer.SIZE);
         try {
+
+                //socket.connect(address, Serializer.PORT);
                 //пробуем достучаться до сервера 10 раз, отправляя пакеты каждую секунду
                 System.out.println("Пакет отправлен, ждите.");
                 for(int i = 0; i<11; i++){
@@ -37,7 +39,12 @@ public class Sender {
                     } catch (SocketTimeoutException e){
                         if(i!=10){
                         continue;}
-                        else{System.out.println("Сервер недоступен."); System.exit(0);}
+                        else{
+                            socket.close();
+                            System.out.println("Сервер недоступен. Попробуйте ввести другой порт и IP.");
+                            Client client = new Client();
+                            client.start();
+                        }
                     }
                 }
 

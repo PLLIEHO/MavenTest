@@ -1,14 +1,12 @@
 package com.company.server.core.commands;
 
 import com.company.common.ElementList;
-import com.company.common.data.HumanBeing;
-import com.company.common.data.Mood;
-import com.company.common.data.WeaponType;
+import com.company.server.data.HumanBeing;
+import com.company.server.data.Mood;
+import com.company.server.data.WeaponType;
 import com.company.server.core.Collection;
 
-import java.io.IOException;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
 
 public class UpdateCore {

@@ -1,8 +1,8 @@
 package com.company.server.core.commands;
 
-import com.company.common.data.HumanBeing;
-import com.company.common.data.Mood;
-import com.company.common.data.WeaponType;
+import com.company.server.data.HumanBeing;
+import com.company.server.data.Mood;
+import com.company.server.data.WeaponType;
 import com.company.server.CommandCore;
 import com.company.server.core.comparators.CoordsXComparator;
 import com.company.server.core.comparators.CoordsYComparator;

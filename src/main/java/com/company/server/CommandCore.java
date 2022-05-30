@@ -1,6 +1,8 @@
 package com.company.server;
 
-import com.company.common.*;
+import com.company.common.CommandList;
+import com.company.common.Pack;
+import com.company.common.Request;
 import com.company.server.core.*;
 import com.company.server.core.commands.*;
 

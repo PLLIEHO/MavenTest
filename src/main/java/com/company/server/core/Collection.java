@@ -1,9 +1,8 @@
 package com.company.server.core;
 
-import com.company.common.data.HumanBeing;
+import com.company.server.data.HumanBeing;
 
 import java.util.ArrayDeque;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.Deque;
 
